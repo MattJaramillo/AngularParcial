@@ -1,3 +1,34 @@
-<p>
-  plantas works!
-</p>
+<h1>Vivero El Otoño</h1>
+<img src="https://definicion.de/wp-content/uploads/2013/03/pino-1.jpg" alt="imagen sobre el otoño">
+
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre Común</th>
+          <th>Tipo</th>
+          <th>Clima</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of plantas">
+          <td>
+            <dd>{{c.numero}}</dd>
+          </td>
+          <td>
+            <dd>{{c.nombre}}</dd>
+          </td>
+          <td>
+            <dd>{{c.tipo}}</dd>
+          </td>
+          <td>
+            <dd>{{c.clima}}</dd>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>Contact us: +57 3102020202 - info@vivero.com - @vivero</footer>
