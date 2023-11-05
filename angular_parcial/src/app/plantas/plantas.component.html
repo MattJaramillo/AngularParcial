@@ -13,23 +13,35 @@
         <tr>
           <th>#</th>
           <th>Nombre Común</th>
+          <th>Nombre Cientifico</th>
           <th>Tipo</th>
+          <th>Altura</th>
           <th>Clima</th>
+          <th>Sustrato Siembra</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let c of plantas">
+        <tr *ngFor="let c of planta">
           <td>
-            <dd>{{c.numero}}</dd>
+            <dd>{{c.id}}</dd>
           </td>
           <td>
-            <dd>{{c.nombre}}</dd>
+            <dd>{{c.nombre_comun}}</dd>
+          </td>
+          <td>
+            <dd>{{c.nombre_cientifico}}</dd>
           </td>
           <td>
             <dd>{{c.tipo}}</dd>
           </td>
           <td>
+            <dd>{{c.altura_maxima}}</dd>
+          </td>
+          <td>
             <dd>{{c.clima}}</dd>
+          </td>
+          <td>
+            <dd>{{c.sustrato_siembra}}</dd>
           </td>
       </tr>
       </tbody>
@@ -38,13 +50,13 @@
       <thead>
         <tr>
           <th>Total plantas de interior: </th>
-          <th>5</th>
+          <th>4</th>
         </tr>
       </thead>
       <thead>
         <tr>
           <th>Total plantas de exterior: </th>
-          <th>7</th>
+          <th>2</th>
         </tr>
       </thead>
     </table>
