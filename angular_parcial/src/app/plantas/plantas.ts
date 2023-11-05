@@ -11,3 +11,4 @@ export class Plantas {
         this.clima = clima;
     }
 }
+

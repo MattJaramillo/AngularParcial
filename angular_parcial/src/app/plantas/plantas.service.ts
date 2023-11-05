@@ -8,6 +8,9 @@ import { environment } from '../../environments/environment';
 @Injectable({  providedIn: 'root'
 })
 export class PlantasService {
+    getPlantas() {
+      throw new Error('Method not implemented.');
+    }
     private apiUrl = environment.baseUrl + 'plantas.json';
     constructor(private http: HttpClient) { }
 
